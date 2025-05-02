@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>¿Cuántos pesos necesito?</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>¿Cuántos pesos necesito?</h1>
+
+  <form id="formulario">
+    <label>
+      Adónde:
+      <select id="destino">
+        <option value="" disabled selected>Selecciona una ciudad</option>
+        <option value="Cuzco">Cuzco</option>
+        <option value="Rio">Rio</option>
+        <option value="Miami">Miami</option>
+        <option value="Barcelona">Barcelona</option>
+        <option value="Tokio">Tokio</option>
+      </select>
+    </label>
+
+    <label>
+      Cuántos días:
+      <input type="number" id="dias" min="1" required>
+    </label>
+
+    <button type="submit">Calcular</button>
+  </form>
+
+  <div id="resultado"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>
