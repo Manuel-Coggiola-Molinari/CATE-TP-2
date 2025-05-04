@@ -1,16 +1,75 @@
+h1 {
+  margin-bottom: 20px;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  label {
-    display: block;
-    margin-top: 10px;
-  }
-  
-  #resultado {
-    margin-top: 20px;
-    font-weight: bold;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://em-content.zobj.net/thumbs/120/apple/354/airplane-departure_1f6eb.png');
+  background-size: 80px 80px; /* Imagen chica, mucho espacio */
+  background-repeat: repeat;
+  background-position: center;
+  background-color: #f0faff; /* fondo claro para contraste */
+  text-align: center;
+  padding: 20px;
+}
+
+form {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  width: 100%;
+}
+
+label {
+  display: block;
+  margin: 15px 0 10px;
+  font-weight: bold;
+}
+
+input, select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.boton-container {
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #2a8fbd;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+  background-color: #1f6f96;
+  transform: translateY(-2px);
+}
+
+#resultado {
+  margin-top: 25px;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 300px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
