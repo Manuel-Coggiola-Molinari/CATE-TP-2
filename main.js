@@ -23,12 +23,18 @@ formulario.addEventListener("submit", function (e) {
     return;
   }
 
-  const info = datosViaje[destino];
-  const dineroExtranjero = 100 * dias;
-  const pesosArg = Math.round(dineroExtranjero * info.cambio);
+  resultado.innerHTML = "Calculando... ⏳";
 
-  resultado.innerHTML = `
-    Necesitás ${info.simbolo}${100} por día para estar tranquilo.<br>
-    Entonces juntá ${pesosArg} pesos argentinos.
-  `;
+  // Esperar 1.5 segundos (1500 milisegundos) antes de mostrar el resultado
+  setTimeout(() => {
+    const info = datosViaje[destino];
+    const dineroExtranjero = 100 * dias;
+    const pesosArg = Math.round(dineroExtranjero * info.cambio);
+
+    resultado.innerHTML = `
+      Necesitás ${info.simbolo}${100} por día para estar tranquilo.<br>
+      Entonces juntá ${pesosArg} pesos argentinos.
+    `;
+    formulario.reset();
+  }, 1500);
 });
