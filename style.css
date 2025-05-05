@@ -11,10 +11,10 @@ body {
   justify-content: center;
   align-items: center;
   background-image: url('https://em-content.zobj.net/thumbs/120/apple/354/airplane-departure_1f6eb.png');
-  background-size: 80px 80px; /* Imagen chica, mucho espacio */
+  background-size: 80px 80px;
   background-repeat: repeat;
   background-position: center;
-  background-color: #f0faff; /* fondo claro para contraste */
+  background-color: #f0faff;
   text-align: center;
   padding: 20px;
 }
@@ -67,7 +67,7 @@ button:hover {
   margin-top: 25px;
   font-weight: bold;
   font-size: 18px;
-  background-color: #fff;
+  background-color: white;
   padding: 15px;
   border-radius: 10px;
   max-width: 300px;

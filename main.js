@@ -7,9 +7,9 @@ const datosViaje = {
   Miami:     { simbolo: "US$",  cambio: 370 / 1 },
   Barcelona: { simbolo: "€",    cambio: 370 / 1.1 },
   Tokio:     { simbolo: "¥",    cambio: 370 / 150 },
-  "Dubái":   { simbolo: "AED",  cambio: 100 },       // 1 AED ≈ 100 ARS
-  "El Cairo":{ simbolo: "E£",   cambio: 370 / 30 },  // 1 E£ ≈ 30 ARS (aprox)
-  "Sídney":  { simbolo: "A$",   cambio: 370 / 1.5 }  // 1.5 AUD ≈ 1 USD
+  Dubai:     { simbolo: "AED",  cambio: 100 },
+  Moscú:     { simbolo: "₽",    cambio: 370 / 90 },
+  Sidney:    { simbolo: "A$",   cambio: 370 / 1.5 }
 };
 
 formulario.addEventListener("submit", function (e) {
@@ -25,7 +25,7 @@ formulario.addEventListener("submit", function (e) {
 
   resultado.innerHTML = "Calculando... ⏳";
 
-  // Esperar 1.5 segundos (1500 milisegundos) antes de mostrar el resultado
+  // Esperar 1.5 segundos antes de mostrar el resultado
   setTimeout(() => {
     const info = datosViaje[destino];
     const dineroExtranjero = 100 * dias;
